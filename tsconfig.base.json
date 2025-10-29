@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@bnm/tokens/*": ["packages/tokens/src/*"],
+      "@bnm/theme/*": ["packages/theme/src/*"],
+      "@bnm/primitives/*": ["packages/primitives/src/*"],
+      "@bnm/sections/*": ["packages/sections/src/*"],
+      "@bnm/utils/*": ["packages/utils/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
