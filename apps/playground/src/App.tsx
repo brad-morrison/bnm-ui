@@ -1,8 +1,6 @@
 // apps/playground/src/App.tsx
 import React from 'react';
-import styled from 'styled-components';
-import { ThemeProvider } from '@bnm/theme/ThemeProvider';
-import { Box, Flex, HStack, VStack, Grid, GridItem, Container, SectionRoot, Heading, Text, Button, Input} from '@bnm/primitives';
+import { Container, SectionRoot, Heading, Text, Button, Input, VStack } from '@bnm/primitives';
 
 export default function App() {
   return (

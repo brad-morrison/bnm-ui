@@ -43,7 +43,7 @@ export const Flex = <E extends React.ElementType = 'div'>(props: FlexProps<E>) =
   const { direction, align, justify, wrap, inline, grow, shrink, basis, ...rest } = props;
   return (
     <FlexBase
-      {...(rest as any)}
+      {...rest}
       $direction={direction}
       $align={align}
       $justify={justify}

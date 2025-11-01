@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.d.ts",
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

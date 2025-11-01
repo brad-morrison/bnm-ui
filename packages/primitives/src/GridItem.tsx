@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from './Box';
+import { Box, BoxProps } from './Box';
 
 type GridItemProps<E extends React.ElementType = 'div'> =
   Omit<React.ComponentPropsWithoutRef<typeof Box>, 'as'> & {
@@ -15,15 +15,14 @@ type GridItemProps<E extends React.ElementType = 'div'> =
 export const GridItem = <E extends React.ElementType = 'div'>(props: GridItemProps<E>) => {
   const { col, row, area, styleOverrides, ...rest } = props;
 
-  return (
-    <Box
-      {...(rest as any)}
-      styleOverrides={{
-        gridColumn: col,
-        gridRow: row,
-        gridArea: area,
-        ...(styleOverrides || {}),
-      }}
-    />
-  );
+  const mergedStyle = {
+    gridColumn: col,
+    gridRow: row,
+    gridArea: area,
+    ...(styleOverrides || {}),
+  } as React.CSSProperties;
+
+  const boxProps = { ...rest, styleOverrides: mergedStyle } as BoxProps<E>;
+
+  return <Box {...boxProps} />;
 };

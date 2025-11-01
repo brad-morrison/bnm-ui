@@ -55,7 +55,7 @@ export const Grid = <E extends React.ElementType = 'div'>(props: GridProps<E>) =
 
   return (
     <GridBase
-      {...(rest as any)}
+      {...rest}
       $columns={columns}
       $rows={rows}
       $areas={areas}
