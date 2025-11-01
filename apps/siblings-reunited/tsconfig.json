@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@bnm/primitives": ["../../packages/primitives/src/index.ts"],
+      "@bnm/primitives/*": ["../../packages/primitives/src/*"],
+      "@bnm/theme": ["../../packages/theme/src/index.ts"],
+      "@bnm/theme/*": ["../../packages/theme/src/*"],
+      "@bnm/tokens": ["../../packages/tokens/src/index.ts"],
+      "@bnm/tokens/*": ["../../packages/tokens/src/*"]
+    },
+    "types": ["styled-components"]
+  },
+  "include": ["src"]
+}
+
