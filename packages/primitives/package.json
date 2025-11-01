@@ -1,9 +1,10 @@
 {
   "name": "@bnm/primitives",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs"
-  }
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
 }
