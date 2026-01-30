@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@bnm/primitives": ["../../packages/primitives/src/index.ts"],
+      "@bnm/primitives/*": ["../../packages/primitives/src/*"],
+      "@bnm/tokens": ["../../packages/tokens/src/index.ts"],
+      "@bnm/tokens/*": ["../../packages/tokens/src/*"],
+      "@bnm/theme": ["../../packages/theme/src/index.ts"],
+      "@bnm/theme/*": ["../../packages/theme/src/*"],
+      "@bnm/sections": ["../../packages/sections/src/index.ts"],
+      "@bnm/sections/*": ["../../packages/sections/src/*"],
+      "@bnm/utils": ["../../packages/utils/src/index.ts"],
+      "@bnm/utils/*": ["../../packages/utils/src/*"]
+    },
+    "types": ["styled-components"]
+  },
+  "include": ["src"]
+}
